@@ -21,7 +21,7 @@ Form.show()
 def sigin():
     if database.password != QtWidgets.QLineEdit.text(ui.password) or database.login != QtWidgets.QLineEdit.text(ui.login):
         print("Password or login not matches!")
-    if database.password == QtWidgets.QLineEdit.text(ui.password) or database.login == QtWidgets.QLineEdit.text(ui.login):
+    if database.password == QtWidgets.QLineEdit.text(ui.password) and database.login == QtWidgets.QLineEdit.text(ui.login):
         print("Successfully signed in!")
 
 def openlink():
